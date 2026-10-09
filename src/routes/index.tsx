@@ -10,6 +10,7 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Nexus Chat is a privacy-first messaging app for secure real-time conversations." },
     ],
   }),
+  ssr: false,
   component: Page,
 });
 

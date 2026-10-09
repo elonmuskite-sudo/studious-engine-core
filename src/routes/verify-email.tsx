@@ -9,6 +9,7 @@ export const Route = createFileRoute("/verify-email")({
       { property: "og:description", content: "Confirm your email address for Nexus Chat." },
     ],
   }),
+  ssr: false,
   component: Page,
 });
 

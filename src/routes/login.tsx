@@ -10,6 +10,7 @@ export const Route = createFileRoute("/login")({
       { property: "og:description", content: "Sign in to your Nexus Chat account." },
     ],
   }),
+  ssr: false,
   component: Page,
 });
 

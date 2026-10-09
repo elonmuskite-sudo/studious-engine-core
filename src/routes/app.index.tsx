@@ -9,6 +9,7 @@ export const Route = createFileRoute("/app/")({
       { property: "og:description", content: "Start a new conversation on Nexus Chat." },
     ],
   }),
+  ssr: false,
   component: Page,
 });
 

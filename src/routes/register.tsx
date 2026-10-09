@@ -10,6 +10,7 @@ export const Route = createFileRoute("/register")({
       { property: "og:description", content: "Create a free Nexus Chat account." },
     ],
   }),
+  ssr: false,
   component: Page,
 });
 

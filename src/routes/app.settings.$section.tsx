@@ -9,6 +9,7 @@ export const Route = createFileRoute("/app/settings/$section")({
       { property: "og:description", content: "Manage your Nexus Chat settings." },
     ],
   }),
+  ssr: false,
   component: Page,
 });
 

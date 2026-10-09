@@ -10,6 +10,7 @@ export const Route = createFileRoute("/reset-password")({
       { property: "og:description", content: "Choose a new password for Nexus Chat." },
     ],
   }),
+  ssr: false,
   component: Page,
 });
 

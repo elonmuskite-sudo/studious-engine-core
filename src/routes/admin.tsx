@@ -10,6 +10,7 @@ export const Route = createFileRoute("/admin")({
       { property: "og:description", content: "Nexus Chat administration dashboard." },
     ],
   }),
+  ssr: false,
   component: Page,
 });
 
