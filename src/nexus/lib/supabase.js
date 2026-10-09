@@ -1,7 +1,8 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || ''
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || ''
+// Public (publishable) values — safe to ship in browser code.
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://vitmhynebbaiahayylid.supabase.co'
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZpdG1oeW5lYmJhaWFoYXl5bGlkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEzNTI4NDIsImV4cCI6MjEwNjkyODg0Mn0.hpSioyZxkkvhF4DqLtgbk1GRSKCl20yjN2-RoVw8xQI'
 
 export const supabase = supabaseUrl && supabaseAnonKey
   ? createClient(supabaseUrl, supabaseAnonKey, {
